@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqueduct — Enterprise Water Quality Intelligence</title>
+    <meta
+      name="description"
+      content="Premium assessment workflows for critical water quality analysis, with transparent AI insight and executive-grade clarity."
+    />
+    <meta name="theme-color" content="#191919" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-nav" id="siteNav">
+        <nav class="nav-inner" aria-label="Primary">
+          <a href="#top" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16">
+                <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+              </svg>
+            </span>
+            <span class="brand-name">Aqueduct</span>
+          </a>
+
+          <div class="nav-links">
+            <a href="#metrics">Metrics</a>
+            <a href="#workspace">Workspace</a>
+            <a href="#results">Results</a>
+            <a href="#technology">Technology</a>
+            <a href="#about">About</a>
+            <a href="#developer">Developer</a>
+          </div>
+
+          <div class="nav-actions">
+            <a href="#workspace" class="nav-signin">Sign in</a>
+            <a href="#workspace" class="btn-solid-fg">Launch console</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="top" class="hero">
+          <div class="hero-grid-texture" aria-hidden="true"></div>
+          <div class="hero-glow" aria-hidden="true"></div>
+
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <span class="badge">
+                <span class="dot-primary"></span>
+                ENTERPRISE INTELLIGENCE
+              </span>
+
+              <h1 class="hero-title text-balance">Confident water decisions for modern operations.</h1>
+
+              <p class="hero-sub text-pretty">
+                Premium assessment workflows for critical water quality analysis, with transparent AI insight and executive-grade clarity.
+              </p>
+
+              <div class="hero-cta">
+                <button type="submit" form="predictionForm" class="btn-primary">
+                  Analyze water
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <a href="#technology" class="btn-outline">Learn more</a>
+              </div>
+
+              <div class="hero-trust">
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 muted"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                  SOC 2 Type II
+                </span>
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 muted"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
+                  99.98% uptime
+                </span>
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 muted"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                  14 parameter models
+                </span>
+              </div>
+            </div>
+
+            <div class="hero-panel">
+              <div class="hero-panel-inner">
+                <div class="hp-head">
+                  <div class="hp-head-left">
+                    <span class="dot-primary"></span>
+                    <span class="hp-title">Live signal integrity</span>
+                  </div>
+                  <span class="mono muted-xs">STATION 04 · REALTIME</span>
+                </div>
+
+                <div class="hp-grid">
+                  <div class="hp-cell">
+                    <div class="hp-label">pH balance</div>
+                    <div class="hp-value mono">7.24</div>
+                    <div class="hp-status"><span class="dot-faint"></span>Optimal</div>
+                  </div>
+                  <div class="hp-cell">
+                    <div class="hp-label">Turbidity</div>
+                    <div class="hp-value mono">0.9 NTU</div>
+                    <div class="hp-status"><span class="dot-faint"></span>Within range</div>
+                  </div>
+                  <div class="hp-cell">
+                    <div class="hp-label">Chloramines</div>
+                    <div class="hp-value mono">8.1 ppm</div>
+                    <div class="hp-status warn"><span class="dot-primary-sm"></span>Elevated</div>
+                  </div>
+                  <div class="hp-cell">
+                    <div class="hp-label">Sulfate</div>
+                    <div class="hp-value mono">312 mg/L</div>
+                    <div class="hp-status"><span class="dot-faint"></span>Optimal</div>
+                  </div>
+                </div>
+
+                <div class="hp-foot">
+                  <div>
+                    <div class="muted-xs">Potability confidence</div>
+                    <div class="hp-foot-title">Safe for distribution</div>
+                  </div>
+                  <div class="mono hp-foot-value">94.2%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="metrics" class="section bordered">
+          <div class="container">
+            <div class="section-head-row">
+              <h2 class="h2-sm">Trusted platform</h2>
+              <p class="section-head-note text-pretty">Designed for serious teams that need calm, reliable decision support.</p>
+            </div>
+
+            <div class="metrics-grid">
+              <div class="metric-cell">
+                <div class="mono metric-value">2.4B</div>
+                <div class="metric-label">Samples evaluated</div>
+                <div class="metric-detail">Across municipal and industrial networks</div>
+              </div>
+              <div class="metric-cell">
+                <div class="mono metric-value">99.98%</div>
+                <div class="metric-label">Platform uptime</div>
+                <div class="metric-detail">Measured trailing twelve months</div>
+              </div>
+              <div class="metric-cell">
+                <div class="mono metric-value">&lt;180ms</div>
+                <div class="metric-label">Median inference</div>
+                <div class="metric-detail">From ingest to potability verdict</div>
+              </div>
+              <div class="metric-cell">
+                <div class="mono metric-value">340+</div>
+                <div class="metric-label">Enterprise deployments</div>
+                <div class="metric-detail">Utilities, labs and operators worldwide</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="workspace" class="section">
+          <div class="container">
+            <div class="section-head">
+              <span class="eyebrow">Workspace</span>
+              <h2 class="h2 text-balance">The Water Analysis Workspace</h2>
+              <p class="section-lead text-pretty">
+                Enter measured parameters and the model returns a potability verdict with per-signal contribution. Built for lab technicians and operations leads alike.
+              </p>
+            </div>
+
+            <div class="workspace-grid">
+              <div class="ws-panel">
+                <div class="ws-panel-head">
+                  <div class="ws-panel-title">
+                    <span class="step-badge mono">01</span>
+                    Sample parameters
+                  </div>
+                  <button type="button" id="resetBtn" class="ws-reset">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-14"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    Reset
+                  </button>
+                </div>
+
+                <form action="/predict" method="POST" id="predictionForm">
+                  <div class="form-grid ws-inputs">
+                    <div class="input-group">
+                      <label>Aluminium</label>
+                      <input type="number" step="any" name="aluminium" value="{{ request.form.get('aluminium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Ammonia</label>
+                      <input type="number" step="any" name="ammonia" value="{{ request.form.get('ammonia','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Arsenic</label>
+                      <input type="number" step="any" name="arsenic" value="{{ request.form.get('arsenic','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Barium</label>
+                      <input type="number" step="any" name="barium" value="{{ request.form.get('barium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Cadmium</label>
+                      <input type="number" step="any" name="cadmium" value="{{ request.form.get('cadmium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Chloramine</label>
+                      <input type="number" step="any" name="chloramine" value="{{ request.form.get('chloramine','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Chromium</label>
+                      <input type="number" step="any" name="chromium" value="{{ request.form.get('chromium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Copper</label>
+                      <input type="number" step="any" name="copper" value="{{ request.form.get('copper','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Flouride</label>
+                      <input type="number" step="any" name="flouride" value="{{ request.form.get('flouride','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Bacteria</label>
+                      <input type="number" step="any" name="bacteria" value="{{ request.form.get('bacteria','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Viruses</label>
+                      <input type="number" step="any" name="viruses" value="{{ request.form.get('viruses','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Lead</label>
+                      <input type="number" step="any" name="lead" value="{{ request.form.get('lead','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Nitrates</label>
+                      <input type="number" step="any" name="nitrates" value="{{ request.form.get('nitrates','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Nitrites</label>
+                      <input type="number" step="any" name="nitrites" value="{{ request.form.get('nitrites','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Mercury</label>
+                      <input type="number" step="any" name="mercury" value="{{ request.form.get('mercury','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Perchlorate</label>
+                      <input type="number" step="any" name="perchlorate" value="{{ request.form.get('perchlorate','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Radium</label>
+                      <input type="number" step="any" name="radium" value="{{ request.form.get('radium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Selenium</label>
+                      <input type="number" step="any" name="selenium" value="{{ request.form.get('selenium','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Silver</label>
+                      <input type="number" step="any" name="silver" value="{{ request.form.get('silver','') }}" required>
+                    </div>
+
+                    <div class="input-group">
+                      <label>Uranium</label>
+                      <input type="number" step="any" name="uranium" value="{{ request.form.get('uranium','') }}" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary full">Analyze Water</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="ws-panel ws-verdict">
+                <div class="ws-panel-head simple">
+                  <div class="ws-panel-title">
+                    <span class="step-badge mono">02</span>
+                    Model verdict
+                  </div>
+                </div>
+
+                <div class="ws-verdict-body">
+                  <div class="verdict-card">
+                    <div class="verdict-top">
+                      <span class="muted-xs upper">Potability</span>
+                      <span class="verdict-pill" id="verdictPill">
+                        <span class="verdict-pill-dot" id="verdictPillDot"></span>
+                        <span id="verdictPillText">
+                          {% if status %}
+                            {{ status }}
+                          {% else %}
+                            Waiting...
+                          {% endif %}
+                        </span>
+                      </span>
+                    </div>
+
+                    <div class="verdict-score">
+                      <span class="mono" id="confidenceValue">
+                        {% if confidence %}
+                          {{ confidence }}
+                        {% else %}
+                          --
+                        {% endif %}
+                      </span>
+                      <span class="verdict-pct">%</span>
+                    </div>
+
+                    {% if prediction_text %}
+                    <div class="prediction-result">
+                      <h3>{{ prediction_text }}</h3>
+                      <p><strong>Risk:</strong> {{ risk }}</p>
+                      <p>{{ recommendation }}</p>
+                    </div>
+                    {% else %}
+                    <div class="prediction-result">
+                      <h3>Waiting for prediction...</h3>
+                      <p><strong>Risk:</strong> --</p>
+                      <p>Fill in all parameters and click <strong>Analyze Water</strong>.</p>
+                    </div>
+                    {% endif %}
+
+                    <div class="verdict-bar">
+                      <div class="verdict-bar-fill" id="confidenceBar"></div>
+                    </div>
+                  </div>
+
+                  <div id="flaggedContainer" style="display:none;"></div>
+
+                  <button type="button" class="btn-primary full" id="reportBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"/></svg>
+                    Generate full report
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="m9 18 6-6-6-6"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="results" class="section bordered">
+          <div class="container">
+            <div class="section-head">
+              <span class="eyebrow">Results</span>
+              <h2 class="h2 text-balance">AI results dashboard</h2>
+              <p class="section-lead text-pretty">
+                Every verdict is fully explainable. Inspect signal contribution, historical drift and remediation guidance in one view.
+              </p>
+            </div>
+
+            <div class="results-grid">
+              <div class="card span-2">
+                <div class="card-head-row">
+                  <h3 class="card-title">Signal contribution</h3>
+                  <span class="mono muted-xs">SHAP · normalized</span>
+                </div>
+                <div class="contrib-list" id="contribList"></div>
+              </div>
+
+              <div class="card">
+                <div class="card-head-row">
+                  <h3 class="card-title">Confidence trend</h3>
+                  <span class="trend-delta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-14 primary"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+                    +36pt
+                  </span>
+                </div>
+                <div class="trend-chart">
+                  <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="trend-svg" aria-hidden="true">
+                    <polyline id="trendLine" fill="none" stroke="var(--primary)" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <div class="trend-current">
+                    <span class="mono trend-current-value">94%</span>
+                    <span class="muted-sm">current</span>
+                  </div>
+                  <p class="muted-xs trend-caption">Trailing 12 assessments</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guidance-grid">
+              <div class="card">
+                <div class="guidance-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 primary"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                </div>
+                <h4 class="guidance-title">Reduce sulfate load</h4>
+                <p class="guidance-body">Sulfate at 312 mg/L exceeds the 250 mg/L guideline. Recommend blend adjustment at intake.</p>
+              </div>
+              <div class="card">
+                <div class="guidance-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 muted"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+                </div>
+                <h4 class="guidance-title">Disinfection nominal</h4>
+                <p class="guidance-body">Chloramine residual holding within control band across the last three cycles.</p>
+              </div>
+              <div class="card">
+                <div class="guidance-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16 muted"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                </div>
+                <h4 class="guidance-title">Audit-ready export</h4>
+                <p class="guidance-body">Generate a signed PDF with model version, inputs and reasoning for compliance filing.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="technology" class="section bordered">
+          <div class="container">
+            <div class="tech-grid">
+              <div>
+                <span class="eyebrow">Technology</span>
+                <h2 class="h2 text-balance">Engineered for accuracy you can defend.</h2>
+                <p class="section-lead text-pretty">
+                  A mature stack built for regulated environments — transparent, reproducible and secure from ingest to audit.
+                </p>
+                <dl class="tech-stats">
+                  <div>
+                    <dt class="muted-sm">Model precision</dt>
+                    <dd class="mono tech-stat-value">98.6%</dd>
+                  </div>
+                  <div>
+                    <dt class="muted-sm">Signals modeled</dt>
+                    <dd class="mono tech-stat-value">14</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="pillars-grid">
+                <div class="pillar">
+                  <div class="pillar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+                  </div>
+                  <h3 class="pillar-title">Gradient-boosted ensemble</h3>
+                  <p class="pillar-body">A calibrated ensemble trained on millions of labeled samples, tuned for precision on the potability boundary.</p>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>
+                  </div>
+                  <h3 class="pillar-title">Explainable by design</h3>
+                  <p class="pillar-body">Per-signal SHAP attribution ships with every verdict, so operators understand exactly why a call was made.</p>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <h3 class="pillar-title">Private by default</h3>
+                  <p class="pillar-body">Sample data is encrypted in transit and at rest. Bring your own keys and region-pinned isolation.</p>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+                  </div>
+                  <h3 class="pillar-title">Versioned &amp; reproducible</h3>
+                  <p class="pillar-body">Every model release is immutable and traceable. Re-run any historical verdict against its original weights.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section bordered">
+          <div class="container">
+            <div class="about-grid">
+              <div>
+                <span class="eyebrow">About</span>
+                <h2 class="h2 text-balance about-title">Water quality is a decision, not a data dump.</h2>
+              </div>
+              <div class="about-body">
+                <p>
+                  Aqueduct was built for the people accountable for what comes out of the tap — utility operators, environmental labs and industrial safety teams. They don&apos;t need another dashboard of raw readings; they need a clear, defensible answer.
+                </p>
+                <p>
+                  We pair rigorous modeling with restraint in the interface. The result is software that feels calm under pressure: fast to read, honest about uncertainty, and ready for the audit when it matters.
+                </p>
+                <div class="about-stats">
+                  <div>
+                    <div class="mono about-stat-value">2019</div>
+                    <div class="muted-sm">Founded</div>
+                  </div>
+                  <div>
+                    <div class="mono about-stat-value">27</div>
+                    <div class="muted-sm">Countries served</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="developer" class="section bordered">
+          <div class="container">
+            <div class="dev-grid">
+              <div>
+                <span class="eyebrow">Developer</span>
+                <h2 class="h2 text-balance">A single API call to a verdict.</h2>
+                <p class="section-lead text-pretty">
+                  Integrate potability scoring directly into your SCADA, LIMS or data pipeline. Typed SDKs, idempotent requests and versioned models out of the box.
+                </p>
+                <div class="dev-cta">
+                  <a href="#workspace" class="btn-outline">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></svg>
+                    Read the docs
+                  </a>
+                  <a href="#workspace" class="dev-link">
+                    Get an API key
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="code-card">
+                <div class="code-head">
+                  <span class="code-dot"></span>
+                  <span class="code-dot"></span>
+                  <span class="code-dot"></span>
+                  <span class="mono muted-xs code-file">assess.ts</span>
+                </div>
+                <pre class="code-body mono"><code><span class="muted">// Score a sample against the latest model</span>
+<span class="primary">const</span> res = <span class="primary">await</span> aqueduct.assess({
+  ph: <span class="fg">7.2</span>,
+  sulfate: <span class="fg">312</span>,
+  chloramines: <span class="fg">7.1</span>,
+  turbidity: <span class="fg">0.9</span>,
+})
+
+<span class="muted">// → { potable: true, confidence: 0.942 }</span></code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand-col">
+              <div class="brand">
+                <span class="brand-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-16"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                </span>
+                <span class="brand-name">Aqueduct</span>
+              </div>
+              <p class="footer-blurb">Enterprise water quality intelligence for teams that need calm, reliable decisions.</p>
+            </div>
+
+            <div class="footer-col">
+              <h3 class="footer-col-title">Product</h3>
+              <ul><li><a href="#top">Workspace</a></li><li><a href="#top">Results</a></li><li><a href="#top">Technology</a></li><li><a href="#top">Pricing</a></li></ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-col-title">Developers</h3>
+              <ul><li><a href="#top">API reference</a></li><li><a href="#top">SDKs</a></li><li><a href="#top">Status</a></li><li><a href="#top">Changelog</a></li></ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-col-title">Company</h3>
+              <ul><li><a href="#top">About</a></li><li><a href="#top">Customers</a></li><li><a href="#top">Careers</a></li><li><a href="#top">Contact</a></li></ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-col-title">Legal</h3>
+              <ul><li><a href="#top">Privacy</a></li><li><a href="#top">Terms</a></li><li><a href="#top">Security</a></li><li><a href="#top">SOC 2</a></li></ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="muted-sm" id="footerCopy">© Aqueduct Intelligence, Inc.</p>
+            <p class="mono muted-xs">All systems operational · v4.2.1</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
